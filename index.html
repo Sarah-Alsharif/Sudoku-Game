@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Game</title>
+
+    <!--css lick-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+</head>
+<body>
+   <div class="container">
+
+    <h1 id="title">Sudoku Game</h1>
+    <div class="div-container">
+        <!--chose difficulty-->
+        <div class="difficulty">
+            <label><input id="easy" type="radio" value="easy" name="difficult" checked />Easy</label>
+            <label><input id="medium" type="radio" value="medium" name="difficult"/>Medium</label>
+            <label><input id="hard" type="radio" value="hard" name="difficult"/>Hard</label>
+        </div>
+
+         <!--button-->
+        <div>
+            <button id="start">start game</button>
+        </div>
+      
+          <!--Mistakes / timer-->
+          <div class="timer-mistakes">
+            <p id="Mistakes">Mistakes : <span id="Mistakes-numbers">0</span><span>\5</span></p>
+            <p id="Timer">Timer : <span id="countTimer">0:00</span></p>
+         </div>
+    </div>
+
+    <!--for result of game lose/win-->
+    <div class="result">
+        <p class="result-p"></p>
+    </div>
+
+    <div class="sub-container">
+      <div class="animate">
+         <img class=" hide animate-1" src="https://media0.giphy.com/media/KcEVmFtmhpmdkLYxy9/giphy.gif" width="300px" height="300px" alt="animate">
+      </div>
+     
+    <!--board-->
+   <div class="game">
+    <div class="game-board"></div>
+    <div class="game-number hide">
+    <p class="eraser">
+        <i class="fas fa-eraser"></i>
+    </p>
+     <p class="number">1</p>
+     <p class="number">2</p>
+     <p class="number">3</p>
+     <p class="number">4</p>
+     <p class="number">5</p>
+     <p class="number">6</p>
+     <p class="number">7</p>
+     <p class="number">8</p>
+     <p class="number">9</p>
+    </div>
+   </div>
+
+   </div>
+   </div> 
+
+    <!-- javascript link-->
+    <script src="js/main.js"></script>
+</body>
+</html>
